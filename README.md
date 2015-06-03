@@ -5,6 +5,14 @@ This is the MetaData repository for HRR (Development).
 Selected health registries will have thier metadata listed here during the development of the HRR data infrastructure.  XML metadata, developing standards, and preliminary documentation and data quality reports.
 
 
+## Install the MetaData Repository Locally
+
+Install a copy of the HRR MetaData repository and a self contained web-server into your local environment.
+
+Donwload and execute the [installation script](https://github.com/hrrno/datamunger/blob/develop/Munger/Scripts/install-metadata-webserver.fsx) in the desired folder.  [Requires mono/.NET]
+
+
+
 ## Available Metadata
 
 | Registry | Resource | Format |
@@ -14,3 +22,8 @@ Selected health registries will have thier metadata listed here during the devel
 | MFR | MFR Structure and Variable Definition Scripts | SQL |
 | MFR | MFR Detailed Variable Documentation | SQL, XML, PDF, DOC |
 | MFR | MFR Variable Definitions | SQL |
+| MFR | MFR Data Quality Reports | PDF, DOC |
+
+
+
+
