@@ -17,7 +17,7 @@ Donwload and execute the [installation script](https://github.com/hrrno/datamung
 | Registry | Resource | Format |
 | --- | --- | --- |
 | MFR | [Dataset Metadata XML](https://github.com/hrrno/metadata/blob/master/registries/mfr/norstore/norstore.xml) | [Dublin Core](http://dublincore.org/), [Norstore](https://www.norstore.no/services/archive) |
-| MFR | MFR Base Structure | SQL |
+| MFR | [MFR Base Structure](https://github.com/hrrno/metadata/blob/master/registries/mfr/data/structure/mfr_all_fields.sql) | [SQL](http://en.wikipedia.org/wiki/SQL) |
 | MFR | MFR Structure and Variable Definition Scripts | SQL |
 | MFR | MFR Detailed Variable Documentation | SQL, XML, PDF, DOC |
 | MFR | MFR Variable Definitions | SQL |
