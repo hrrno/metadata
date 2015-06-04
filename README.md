@@ -9,7 +9,7 @@ Selected health registries will have thier metadata listed here during the devel
 
 Install a copy of the HRR MetaData repository and a self contained web-server into your local environment.
 
-Donwload and execute the [installation script](https://raw.githubusercontent.com/hrrno/datamunger/develop/Munger/Scripts/install-metadata-webserver.fsx) in the desired folder.  [Requires mono/.NET]
+Right click to 'save as...', then execute the [installation script](https://raw.githubusercontent.com/hrrno/datamunger/develop/Munger/Scripts/install-metadata-webserver.fsx) in the desired folder.  [Requires mono/.NET]
 
 
 ## Available Metadata
