@@ -15,7 +15,7 @@ Right click to 'save as...', then execute the [installation script](https://raw.
 ## Available Metadata
 
 | Registry | Resource | Format |
-| --- | --- | --- |
+| --- | :--- | :---: |
 | MFR | [Dataset Metadata XML](https://github.com/hrrno/metadata/blob/master/registries/mfr/norstore/norstore.xml) | [Dublin Core](http://dublincore.org/), [Norstore](https://www.norstore.no/services/archive) |
 | MFR | [MFR Base Structure](https://github.com/hrrno/metadata/blob/master/registries/mfr/data/structure/mfr_all_fields.sql) | [SQL](http://en.wikipedia.org/wiki/SQL) |
 | MFR | MFR Structure and Variable Definition Scripts | SQL |
