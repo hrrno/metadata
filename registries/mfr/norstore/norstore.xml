@@ -1,34 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd" xmlns:nsterms="http://example.com">
-  <nsterms:propsalID>MetaData.Publishing+PublisherIdentifier</nsterms:propsalID>
+  <nsterms:propsalID>PublisherIdentifier</nsterms:propsalID>
   <dcterms:language>no</dcterms:language>
   <dcterms:title>Medisinsk Fødselregister Dataset 1</dcterms:title>
   <dcterms:alternate>MFR DS1</dcterms:alternate>
   <dcterms:description>The central birth registry of Norway</dcterms:description>
-  <nsterms:status>MetaData.Publishing+ProjectPhase</nsterms:status>
-  <nsterms:reasonForRemoval />
-  <dcterms:coverage />
-  <nsterms:category>MetaData.Publishing+Category</nsterms:category>
+  <nsterms:status>Preparation</nsterms:status>
+  <dcterms:coverage>
+    <nsterms:startDate>1. januar 1957</nsterms:startDate>
+    <nsterms:endDate>4. juni 2015</nsterms:endDate>
+    <nsterms:spatialType />
+    <nsterms:parameters />
+  </dcterms:coverage>
+  <nsterms:category>Experiment</nsterms:category>
   <nsterms:preservationLevel />
   <dcterms:source />
   <dcterms:bibliographicCitation />
   <dcterms:conformsTo />
-  <dcterms:subject />
-  <dcterms:creator />
-  <nsterms:dataManager />
+  <dcterms:subject>
+    <nsterms:domain>Professions and Applied Science</nsterms:domain>
+    <nsterms:field>Health Science</nsterms:field>
+    <nsterms:subField>Public Health</nsterms:subField>
+  </dcterms:subject>
+  <dcterms:creator>
+    <nsterms:Person>
+      <nsterms:firstName>Saks</nsterms:firstName>
+      <nsterms:lastName>Behandler</nsterms:lastName>
+      <nsterms:email>saks.behandler@fhi.no</nsterms:email>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:federatedID>uri: http://re/surs/er/brukernavn@inst</nsterms:federatedID>
+    </nsterms:Person>
+    <nsterms:Organisation>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:orgLongName>Folkehelseinstituttet</nsterms:orgLongName>
+      <nsterms:homePage>uri: http://www.fhi.no</nsterms:homePage>
+      <nsterms:contactEmail>contact@fhi.no</nsterms:contactEmail>
+    </nsterms:Organisation>
+  </dcterms:creator>
+  <nsterms:dataManager>
+    <nsterms:Person>
+      <nsterms:firstName>Data</nsterms:firstName>
+      <nsterms:lastName>Manager</nsterms:lastName>
+      <nsterms:email>data.manager@fhi.no</nsterms:email>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:federatedID>uri: http://re/surs/er/brukernavn@inst</nsterms:federatedID>
+    </nsterms:Person>
+    <nsterms:Organisation>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:orgLongName>Folkehelseinstituttet</nsterms:orgLongName>
+      <nsterms:homePage>uri: http://www.fhi.no</nsterms:homePage>
+      <nsterms:contactEmail>contact@fhi.no</nsterms:contactEmail>
+    </nsterms:Organisation>
+  </nsterms:dataManager>
   <dcterms:contributor />
   <dcterms:accessRights />
-  <dcterms:rights>http://example.com/</dcterms:rights>
+  <dcterms:rights>license</dcterms:rights>
   <dcterms:rightsHolder />
   <dcterms:publisher>FHI</dcterms:publisher>
   <dcterms:extent />
   <nsterms:totalFiles />
   <nsterms:fixityAlgorithm>md5</nsterms:fixityAlgorithm>
   <nsterms:lifetime />
-  <dcterms:created>1. juni 2015</dcterms:created>
-  <dcterms:dateSubmitted>1. juni 2015</dcterms:dateSubmitted>
+  <dcterms:created>4. juni 2015</dcterms:created>
+  <dcterms:dateSubmitted>4. juni 2015</dcterms:dateSubmitted>
   <dcterms:dateAccepted />
-  <nsterms:datePublished>1. juni 2015</nsterms:datePublished>
+  <nsterms:datePublished>4. juni 2015</nsterms:datePublished>
   <dcterms:provenance />
   <dcterms:tableOfContents />
   <dcterms:hasPart />
