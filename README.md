@@ -12,7 +12,6 @@ Install a copy of the HRR MetaData repository and a self contained web-server in
 Donwload and execute the [installation script](https://github.com/hrrno/datamunger/blob/develop/Munger/Scripts/install-metadata-webserver.fsx) in the desired folder.  [Requires mono/.NET]
 
 
-
 ## Available Metadata
 
 | Registry | Resource | Format |
@@ -24,6 +23,11 @@ Donwload and execute the [installation script](https://github.com/hrrno/datamung
 | MFR | MFR Variable Definitions | SQL |
 | MFR | MFR Data Quality Reports | PDF, DOC |
 
+
+## Other resources
+
+
+[HRR MetaData Development website](http://hrrno.github.io/metadata/).
 
 
 
