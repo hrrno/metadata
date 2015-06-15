@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd" xmlns:nsterms="http://example.com">
-  <nsterms:propsalID>PublisherIdentifier</nsterms:propsalID>
+  <nsterms:propsalID />
   <dcterms:language>no</dcterms:language>
   <dcterms:title>Medisinsk Fødselregister Dataset 1</dcterms:title>
   <dcterms:alternate>MFR DS1</dcterms:alternate>
   <dcterms:description>The central birth registry of Norway</dcterms:description>
-  <nsterms:status>Preparation</nsterms:status>
+  <nsterms:status />
   <dcterms:coverage>
     <nsterms:startDate>1. januar 1957</nsterms:startDate>
-    <nsterms:endDate>4. juni 2015</nsterms:endDate>
+    <nsterms:endDate>15. juni 2015</nsterms:endDate>
     <nsterms:spatialType />
     <nsterms:parameters />
   </dcterms:coverage>
-  <nsterms:category>Experiment</nsterms:category>
+  <nsterms:category />
   <nsterms:preservationLevel />
   <dcterms:source />
   <dcterms:bibliographicCitation />
@@ -61,10 +61,10 @@
   <nsterms:totalFiles />
   <nsterms:fixityAlgorithm>md5</nsterms:fixityAlgorithm>
   <nsterms:lifetime />
-  <dcterms:created>4. juni 2015</dcterms:created>
-  <dcterms:dateSubmitted>4. juni 2015</dcterms:dateSubmitted>
+  <dcterms:created>15. juni 2015</dcterms:created>
+  <dcterms:dateSubmitted>15. juni 2015</dcterms:dateSubmitted>
   <dcterms:dateAccepted />
-  <nsterms:datePublished>4. juni 2015</nsterms:datePublished>
+  <nsterms:datePublished>15. juni 2015</nsterms:datePublished>
   <dcterms:provenance />
   <dcterms:tableOfContents />
   <dcterms:hasPart />
@@ -72,243 +72,244 @@
   <dcterms:isReplacedBy />
   <dcterms:isPartOf />
   <dc:dataset>
-    <dc:field name="VERSJON_RECORD" access="Anonymous" datatype="Int" />
-    <dc:field name="KILDE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ID_BARN" access="Guarded" datatype="Text(2)" />
-    <dc:field name="ID_MOR" access="Guarded" datatype="Text(2)" />
-    <dc:field name="ID_FAR" access="Guarded" datatype="Text(2)" />
-    <dc:field name="FODESTED_KAT" access="Guarded" datatype="Number(2)" />
-    <dc:field name="FODESTED_KAT_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HOVEDINSTNR" access="Restricted" datatype="Text(2)" />
-    <dc:field name="INSTNR" access="Restricted" datatype="Text(2)" />
-    <dc:field name="HELSEFORETAK" access="Restricted" datatype="Text(2)" />
-    <dc:field name="HELSEREGION" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BOHELSEREGION_DAGENS" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="VERSJON_DATABASE" access="Anonymous" datatype="char(6)" />
+    <dc:field name="VERSJON_RECORD" access="Anonymous" datatype="char(7)" />
+    <dc:field name="KILDE" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="ID_BARN" access="Guarded" datatype="varchar(8)" />
+    <dc:field name="ID_MOR" access="Guarded" datatype="varchar(8)" />
+    <dc:field name="ID_FAR" access="Guarded" datatype="varchar(8)" />
+    <dc:field name="FODESTED_KAT" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="FODESTED_KAT_5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="HOVEDINSTNR" access="Restricted" datatype="varchar(5)" />
+    <dc:field name="INSTNR" access="Restricted" datatype="varchar(5)" />
+    <dc:field name="HELSEFORETAK" access="Restricted" datatype="varchar(3)" />
+    <dc:field name="HELSEREGION" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BOHELSEREGION_DAGENS" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="MFDATO" access="Restricted" datatype="Date" />
-    <dc:field name="MOR_FAAR" access="Guarded" datatype="Number(2)" />
-    <dc:field name="MFMND" access="Guarded" datatype="Text(2)" />
-    <dc:field name="GEN_MFNR" access="Guarded" datatype="Number(2)" />
-    <dc:field name="MORS_ALDER" access="Guarded" datatype="Number(2)" />
-    <dc:field name="MORS_ALDER_DESIMALT" access="Guarded" datatype="Int" />
-    <dc:field name="MORS_ALDER_KAT_K6" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BOKOMM" access="Anonymous" datatype="Text(2)" />
-    <dc:field name="BOFYLKE" access="Guarded" datatype="Text(2)" />
-    <dc:field name="BOKOMM_DAGENS" access="Anonymous" datatype="Text(2)" />
-    <dc:field name="BOFYLKE_DAGENS" access="Guarded" datatype="Text(2)" />
-    <dc:field name="SIVST" access="Guarded" datatype="Number(2)" />
-    <dc:field name="SIVST_2" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SLEKTF" access="Guarded" datatype="Number(2)" />
+    <dc:field name="MOR_FAAR" access="Guarded" datatype="Number(4,0)" />
+    <dc:field name="MFMND" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="GEN_MFNR" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="MORS_ALDER" access="Guarded" datatype="Number(3,0)" />
+    <dc:field name="MORS_ALDER_DESIMALT" access="Guarded" datatype="Number(38,35)" />
+    <dc:field name="MORS_ALDER_KAT_K6" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BOKOMM" access="Anonymous" datatype="varchar(4)" />
+    <dc:field name="BOFYLKE" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="BOKOMM_DAGENS" access="Anonymous" datatype="varchar(4)" />
+    <dc:field name="BOFYLKE_DAGENS" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="SIVST" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="SIVST_2" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="SLEKTF" access="Guarded" datatype="Number(1,0)" />
     <dc:field name="FFDATO" access="Restricted" datatype="Date" />
-    <dc:field name="FAR_FAAR" access="Guarded" datatype="Number(2)" />
-    <dc:field name="FFMND" access="Anonymous" datatype="Text(2)" />
-    <dc:field name="GEN_FFNR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FARS_ALDER" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FARS_ALDER_KAT_K8" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PARITET" access="Guarded" datatype="Number(2)" />
-    <dc:field name="PARITET_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PARITET_MOR" access="Guarded" datatype="Number(2)" />
-    <dc:field name="PARITET_MFR" access="Guarded" datatype="Number(2)" />
-    <dc:field name="DODFODTE" access="Guarded" datatype="Number(2)" />
-    <dc:field name="DODFODTE_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="LEVENDEFODTE" access="Guarded" datatype="Number(2)" />
-    <dc:field name="LEVENDEFODTE_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SPABORT_12" access="Guarded" datatype="Number(2)" />
-    <dc:field name="SPABORT_12_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SPABORT_23" access="Guarded" datatype="Number(2)" />
-    <dc:field name="SPABORT_23_5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KSNITT_TIDLIGERE" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="FAR_FAAR" access="Guarded" datatype="Number(4,0)" />
+    <dc:field name="FFMND" access="Anonymous" datatype="varchar(2)" />
+    <dc:field name="GEN_FFNR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FARS_ALDER" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="FARS_ALDER_KAT_K8" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PARITET" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="PARITET_5" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PARITET_MOR" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="PARITET_MFR" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="DODFODTE" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="DODFODTE_5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="LEVENDEFODTE" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="LEVENDEFODTE_5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SPABORT_12" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="SPABORT_12_5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SPABORT_23" access="Guarded" datatype="Number(2,0)" />
+    <dc:field name="SPABORT_23_5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="KSNITT_TIDLIGERE" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="SMENSD" access="Guarded" datatype="Date" />
-    <dc:field name="SMENS_MND" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SMENSD_KODE" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="SMENS_MND" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SMENSD_KODE" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="UL_TERMIN" access="Guarded" datatype="Date" />
-    <dc:field name="UL_TERMIN_AAR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="UL_TERMIN_MND" access="Guarded" datatype="Text(2)" />
+    <dc:field name="UL_TERMIN_AAR" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="UL_TERMIN_MND" access="Guarded" datatype="varchar(2)" />
     <dc:field name="IVF_INNSETT_DATO" access="Guarded" datatype="Date" />
-    <dc:field name="SVLEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_KAT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_DG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_UL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_UL_DG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_SM" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_SM_DG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ZSCORE_BW_GA" access="Anonymous" datatype="Int" />
-    <dc:field name="PRENAT_PAT_KODER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="DIAG_FOER_SVGSK_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MORS_HELSE_FOER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="ASTMA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HYPERTENSJON_KRONISK" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NYRESYKDOM_KRONISK" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="URINVEIS_RES" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="REUM_ARTRITT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HJERTE_MOR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="EPILEPSI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="DIABETES_MELLITUS" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="THYREOIDEA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SYKDOM_MOR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KOSTNEI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOLATF" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MULTIVITF" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="DIAG_UNDER_SVGSK_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MORS_HELSE_UNDER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="BLODN_SVGSK" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BLODN_F13" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BLODN_13_28" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BLODN_E28" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HYPERTENSIV_TILSTAND" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HYPERTENSJON_ALENE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="EKLAMPSI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PREEKL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PREEKLTIDL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PREEKL_EKLAMPSI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HELLP" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HB_U9" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="RUBELLA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="VENERISK" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MULTIVITU" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOLATU" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="LEGEMIDLER_UNDER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="LEGEMIDLER_FODSEL" access="Guarded" datatype="Text(2)" />
-    <dc:field name="ROYK_SAMTYKKE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_OPPL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_FOER" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_FOER_ANT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_BEG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_BEG_ANT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_AVSL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROYK_AVSL_ANT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MORS_HOYDE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MORS_VEKT_FOER" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MORS_VEKT_SLUTT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KMI_FOER" access="Anonymous" datatype="Int" />
-    <dc:field name="KMI_SLUTT" access="Anonymous" datatype="Int" />
-    <dc:field name="FSTART" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ROBSON_10" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INNGREP_TILTAK_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="LEIE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INTERVENSJON" access="Guarded" datatype="Text(2)" />
-    <dc:field name="INDUKSJON_PROSTAGLANDIN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INDUKSJON_OXYTOCIN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INDUKSJON_AMNIOTOMI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INDUKSJON_ANNET" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INNGREP" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="TANG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="VAKUUM" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="EPISIOTOMI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FRAMHJELP" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="UTTREKKING" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KSNITT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KSNITT_PLANLAGT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KOMPL_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KOMPLIKASJONER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="VANNAVGANG" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ABRUPTIOP" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PLACENTA_PREVIA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="RUPTUR34" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BLODNING_O500" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="DYSTOCI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ANESTESI_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="LYSTGASS" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="OPIAT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="EPIDURAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SPINAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PUDENDAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INFILTRASJON" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PARACERV" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NARKOSE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ANESTESI_ANNET" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PLACENTA_NORMAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="UTSKRAPING" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PLACENTAVEKT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="MANUELL_PLACENTA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NAVLESNORLENGDE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOSTERV_NORMAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOSTERV_POLYHYDRAMNION" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOSTERV_OLIGOHYDRAMNION" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FOSTERV_MISF_STINK_INFI" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NAVLESNOR_NORMAL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NAVLESNOR_KOMPL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NAVLESNOR_OMSL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="NAVLESNOR_KNUTE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KOMPLIKASJONER_ETTER" access="Guarded" datatype="Text(2)" />
-    <dc:field name="TROMBOSE_BEH" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="SVLEN" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SVLEN_KAT" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SVLEN_DG" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="SVLEN_UL" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SVLEN_UL_DG" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="SVLEN_SM" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SVLEN_SM_DG" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="ZSCORE_BW_GA" access="Anonymous" datatype="Number(5,2)" />
+    <dc:field name="PRENAT_PAT_KODER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="DIAG_FOER_SVGSK_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="MORS_HELSE_FOER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="ASTMA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HYPERTENSJON_KRONISK" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NYRESYKDOM_KRONISK" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="URINVEIS_RES" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="REUM_ARTRITT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HJERTE_MOR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="EPILEPSI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="DIABETES_MELLITUS" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="THYREOIDEA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="SYKDOM_MOR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KOSTNEI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FOLATF" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="MULTIVITF" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="DIAG_UNDER_SVGSK_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="MORS_HELSE_UNDER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="BLODN_SVGSK" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BLODN_F13" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BLODN_13_28" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BLODN_E28" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HYPERTENSIV_TILSTAND" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HYPERTENSJON_ALENE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="EKLAMPSI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PREEKL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PREEKLTIDL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PREEKL_EKLAMPSI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HELLP" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HB_U9" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="RUBELLA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="VENERISK" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="MULTIVITU" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FOLATU" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="LEGEMIDLER_UNDER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="LEGEMIDLER_FODSEL" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="ROYK_SAMTYKKE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_OPPL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_FOER" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_FOER_ANT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_BEG" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_BEG_ANT" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="ROYK_AVSL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROYK_AVSL_ANT" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="MORS_HOYDE" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="MORS_VEKT_FOER" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="MORS_VEKT_SLUTT" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="KMI_FOER" access="Anonymous" datatype="Number(38,4)" />
+    <dc:field name="KMI_SLUTT" access="Anonymous" datatype="Number(38,4)" />
+    <dc:field name="FSTART" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ROBSON_10" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="INNGREP_TILTAK_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="LEIE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INTERVENSJON" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="INDUKSJON_PROSTAGLANDIN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INDUKSJON_OXYTOCIN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INDUKSJON_AMNIOTOMI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INDUKSJON_ANNET" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INNGREP" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="TANG" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="VAKUUM" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="EPISIOTOMI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FRAMHJELP" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="UTTREKKING" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KSNITT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KSNITT_PLANLAGT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KOMPL_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KOMPLIKASJONER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="VANNAVGANG" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ABRUPTIOP" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PLACENTA_PREVIA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="RUPTUR34" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BLODNING_O500" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="DYSTOCI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ANESTESI_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="LYSTGASS" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="OPIAT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="EPIDURAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="SPINAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PUDENDAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INFILTRASJON" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PARACERV" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NARKOSE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ANESTESI_ANNET" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PLACENTA_NORMAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="UTSKRAPING" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PLACENTAVEKT" access="Anonymous" datatype="Number(5,0)" />
+    <dc:field name="MANUELL_PLACENTA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NAVLESNORLENGDE" access="Anonymous" datatype="Number(3,0)" />
+    <dc:field name="FOSTERV_NORMAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FOSTERV_POLYHYDRAMNION" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FOSTERV_OLIGOHYDRAMNION" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FOSTERV_MISF_STINK_INFI" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NAVLESNOR_NORMAL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NAVLESNOR_KOMPL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NAVLESNOR_OMSL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="NAVLESNOR_KNUTE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KOMPLIKASJONER_ETTER" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="TROMBOSE_BEH" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="FDATO" access="Restricted" datatype="Date" />
-    <dc:field name="FMND" access="Guarded" datatype="Text(2)" />
-    <dc:field name="FAAR" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="FMND" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="FAAR" access="Anonymous" datatype="Number(4,0)" />
     <dc:field name="FTID" access="Guarded" datatype="Date" />
-    <dc:field name="FLERFODSEL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PLURAL" access="Guarded" datatype="Number(2)" />
-    <dc:field name="PLUREK" access="Guarded" datatype="Number(2)" />
-    <dc:field name="PLUREK_1" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KJONN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="VEKT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="LENGDE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HODE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="APGAR1" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="APGAR5" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="OVERFLYTTET" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="FLERFODSEL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PLURAL" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="PLUREK" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="PLUREK_1" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KJONN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="VEKT" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="LENGDE" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="HODE" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="APGAR1" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="APGAR5" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="OVERFLYTTET" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="UTVANDRET_DATO" access="Guarded" datatype="Date" />
-    <dc:field name="FODT_MFR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="TILSTAND" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="FODT_MFR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="TILSTAND" access="Anonymous" datatype="Number(1,0)" />
     <dc:field name="DDATO" access="Restricted" datatype="Date" />
-    <dc:field name="DAAR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="DMND" access="Guarded" datatype="Text(2)" />
-    <dc:field name="DODKAT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DODFODT_MFR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_MFR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_TID_MFR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_FODT_MFR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DODFOD_1000_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DODFOD_500_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_TI_1000_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_TI_500_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_1000_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_DOD_500_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_FODT_1000_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PERINAT_FODT_500_WHO" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="BARNETS_HELSE" access="Guarded" datatype="Text(2)" />
-    <dc:field name="ABSTINENS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="NEO_DIAG_INGEN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="RESPIRATORISK_DISTR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="INTRAKRANIELL_BLODN" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="KONJUNKTIVITT" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="PLEXUSSKADE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="RH_ANTISTOFF" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SYSTEMISKANTIBIOTIKA" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="RESPIRATOR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FRACT_CLAVICULAE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="CPAP" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="HOFTELEDDYSPL_PUTE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ANNEN_FRACTUR" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="ICTERUS" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="FACIALISPARESE" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="C00_MALF_ALL" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="C01_ANENCEPH" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C02_SPINAB" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C03_ENCEPH" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C06_HYDROCEPH" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C11_MICROTIA" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C13_TRANSPOS_GREAT_VESSELS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C15_HYPOPLASTIC_LEFT_HEART" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C18_CLEFT_PALATE_WITHOUT_CL" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C19_CLEFT_LIP_PLUS_MINUS_CP" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C20_OESOPHAGEAL_ATRES_STENOS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C22_ANORECTAL_ATRES_STENOS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C24_HYPOSPADIA" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C27_RENAL_AGENESIS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C31_LIMB_REDUCTION_DEFECTS_ALL" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C38_DIAFRAGMATIC_HERNIA" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C39_OMPHALOCELE" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C40_GASTROSCHISIS" access="Guarded" datatype="Number(2)" />
-    <dc:field name="C45_DOWN" access="Guarded" datatype="Number(2)" />
-    <dc:field name="NEVRALRORSDEFEKTER" access="Guarded" datatype="Number(2)" />
-    <dc:field name="IVF" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="IVFMETODE" access="Guarded" datatype="Number(2)" />
-    <dc:field name="IVFINSTITUSJON" access="Guarded" datatype="Text(2)" />
-    <dc:field name="FODELAND_NAVN" access="Anonymous" datatype="Text(2)" />
-    <dc:field name="FODELAND_KODE" access="Anonymous" datatype="Text(2)" />
-    <dc:field name="SVLEN_IVF" access="Anonymous" datatype="Number(2)" />
-    <dc:field name="SVLEN_IVF_DG" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="DAAR" access="Anonymous" datatype="Number(4,0)" />
+    <dc:field name="DMND" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="DODKAT" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="PERINAT_DODFODT_MFR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_MFR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_TID_MFR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_FODT_MFR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DODFOD_1000_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DODFOD_500_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_TI_1000_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_TI_500_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_1000_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_DOD_500_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_FODT_1000_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PERINAT_FODT_500_WHO" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="BARNETS_HELSE" access="Guarded" datatype="varchar(500)" />
+    <dc:field name="ABSTINENS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="NEO_DIAG_INGEN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="RESPIRATORISK_DISTR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="INTRAKRANIELL_BLODN" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="KONJUNKTIVITT" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="PLEXUSSKADE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="RH_ANTISTOFF" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="SYSTEMISKANTIBIOTIKA" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="RESPIRATOR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FRACT_CLAVICULAE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="CPAP" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="HOFTELEDDYSPL_PUTE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ANNEN_FRACTUR" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="ICTERUS" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="FACIALISPARESE" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="C00_MALF_ALL" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="C01_ANENCEPH" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C02_SPINAB" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C03_ENCEPH" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C06_HYDROCEPH" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C11_MICROTIA" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C13_TRANSPOS_GREAT_VESSELS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C15_HYPOPLASTIC_LEFT_HEART" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C18_CLEFT_PALATE_WITHOUT_CL" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C19_CLEFT_LIP_PLUS_MINUS_CP" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C20_OESOPHAGEAL_ATRES_STENOS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C22_ANORECTAL_ATRES_STENOS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C24_HYPOSPADIA" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C27_RENAL_AGENESIS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C31_LIMB_REDUCTION_DEFECTS_ALL" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C38_DIAFRAGMATIC_HERNIA" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C39_OMPHALOCELE" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C40_GASTROSCHISIS" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="C45_DOWN" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="NEVRALRORSDEFEKTER" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="IVF" access="Anonymous" datatype="Number(1,0)" />
+    <dc:field name="IVFMETODE" access="Guarded" datatype="Number(1,0)" />
+    <dc:field name="IVFINSTITUSJON" access="Guarded" datatype="varchar(4)" />
+    <dc:field name="FODELAND_NAVN" access="Anonymous" datatype="varchar(40)" />
+    <dc:field name="FODELAND_KODE" access="Anonymous" datatype="varchar(3)" />
+    <dc:field name="SVLEN_IVF" access="Anonymous" datatype="Number(2,0)" />
+    <dc:field name="SVLEN_IVF_DG" access="Anonymous" datatype="Number(2,0)" />
     <dc:field name="IVF_DATO_EGGUTTAK" access="Anonymous" datatype="Date" />
-    <dc:field name="IVF_DAG_EGGFRYS" access="Anonymous" datatype="Number(2)" />
+    <dc:field name="IVF_DAG_EGGFRYS" access="Anonymous" datatype="Number(1,0)" />
   </dc:dataset>
 </oai_dc:dc>
