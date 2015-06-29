@@ -22,6 +22,13 @@ Right click to 'save as...', then execute the [installation script](https://raw.
 | MFR | MFR Detailed Variable Documentation | SQL, XML, PDF, DOC |
 | MFR | MFR Variable Definitions | SQL |
 | MFR | MFR Data Quality Reports | PDF, DOC |
+| | | |
+| DÅR | [Dataset Metadata XML](https://github.com/hrrno/metadata/blob/master/registries/daar/norstore/norstore.xml) | [Dublin Core](http://dublincore.org/), [Norstore](https://www.norstore.no/services/archive) |
+| DÅR | [DÅR Base Structure](https://github.com/hrrno/metadata/blob/master/registries/daar/data/structure/daar_all_fields.sql) | [SQL](http://en.wikipedia.org/wiki/SQL) |
+| DÅR | DÅR Structure and Variable Definition Scripts | SQL |
+| DÅR | DÅR Detailed Variable Documentation | SQL, XML, PDF, DOC |
+| DÅR | DÅR Variable Definitions | SQL |
+| DÅR | DÅR Data Quality Reports | PDF, DOC |
 
 
 ## Other resources
