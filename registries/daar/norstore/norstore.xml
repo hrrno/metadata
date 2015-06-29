@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd" xmlns:nsterms="http://example.com">
+  <nsterms:propsalID />
+  <dcterms:language>no</dcterms:language>
+  <dcterms:title>Dødsårsakregister</dcterms:title>
+  <dcterms:alternate></dcterms:alternate>
+  <dcterms:description></dcterms:description>
+  <nsterms:status />
+  <dcterms:coverage>
+    <nsterms:startDate>1. januar 1957</nsterms:startDate>
+    <nsterms:endDate>29. juni 2015</nsterms:endDate>
+    <nsterms:spatialType />
+    <nsterms:parameters />
+  </dcterms:coverage>
+  <nsterms:category />
+  <nsterms:preservationLevel />
+  <dcterms:source />
+  <dcterms:bibliographicCitation />
+  <dcterms:conformsTo />
+  <dcterms:subject>
+    <nsterms:domain>Professions and Applied Science</nsterms:domain>
+    <nsterms:field>Health Science</nsterms:field>
+    <nsterms:subField>Public Health</nsterms:subField>
+  </dcterms:subject>
+  <dcterms:creator>
+    <nsterms:Person>
+      <nsterms:firstName>Saks</nsterms:firstName>
+      <nsterms:lastName>Behandler</nsterms:lastName>
+      <nsterms:email>saks.behandler@fhi.no</nsterms:email>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:federatedID>uri: http://re/surs/er/brukernavn@inst</nsterms:federatedID>
+    </nsterms:Person>
+    <nsterms:Organisation>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:orgLongName>Folkehelseinstituttet</nsterms:orgLongName>
+      <nsterms:homePage>uri: http://www.fhi.no</nsterms:homePage>
+      <nsterms:contactEmail>contact@fhi.no</nsterms:contactEmail>
+    </nsterms:Organisation>
+  </dcterms:creator>
+  <nsterms:dataManager>
+    <nsterms:Person>
+      <nsterms:firstName>Data</nsterms:firstName>
+      <nsterms:lastName>Manager</nsterms:lastName>
+      <nsterms:email>data.manager@fhi.no</nsterms:email>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:federatedID>uri: http://re/surs/er/brukernavn@inst</nsterms:federatedID>
+    </nsterms:Person>
+    <nsterms:Organisation>
+      <nsterms:orgShortName>FHI</nsterms:orgShortName>
+      <nsterms:orgLongName>Folkehelseinstituttet</nsterms:orgLongName>
+      <nsterms:homePage>uri: http://www.fhi.no</nsterms:homePage>
+      <nsterms:contactEmail>contact@fhi.no</nsterms:contactEmail>
+    </nsterms:Organisation>
+  </nsterms:dataManager>
+  <dcterms:contributor />
+  <dcterms:accessRights />
+  <dcterms:rights>license</dcterms:rights>
+  <dcterms:rightsHolder />
+  <dcterms:publisher>FHI</dcterms:publisher>
+  <dcterms:extent />
+  <nsterms:totalFiles />
+  <nsterms:fixityAlgorithm>md5</nsterms:fixityAlgorithm>
+  <nsterms:lifetime />
+  <dcterms:created>29. juni 2015</dcterms:created>
+  <dcterms:dateSubmitted>29. juni 2015</dcterms:dateSubmitted>
+  <dcterms:dateAccepted />
+  <nsterms:datePublished>29. juni 2015</nsterms:datePublished>
+  <dcterms:provenance />
+  <dcterms:tableOfContents />
+  <dcterms:hasPart />
+  <dcterms:replaces />
+  <dcterms:isReplacedBy />
+  <dcterms:isPartOf />
+  <dc:dataset>
+    <dc:field name="IDENT" access="Guarded" datatype="varchar(12)" />
+    <dc:field name="KJONN" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="ALDER_AR" access="Guarded" datatype="numeric(3,0)" />
+    <dc:field name="ALDER_DAGER" access="Guarded" datatype="numeric(5,0)" />
+    <dc:field name="BOSTEDSKOMMUNE" access="Guarded" datatype="varchar(4)" />
+    <dc:field name="DODSTIDSPUNKT" access="Guarded" datatype="timestamp" />
+    <dc:field name="DODSSTED" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="DODSKOMMUNE" access="Guarded" datatype="varchar(4)" />
+    <dc:field name="BOSTEDSLAND" access="Guarded" datatype="varchar(2)" />
+    <dc:field name="OPPHOLDSKATEGORI" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="MELDINGSTYPER_INN" access="Guarded" datatype="varchar(1)" />
+    <dc:field name="SPES_OMST_A" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="SPES_OMST_B" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="SKADESTED" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="SKADEAKTIVITET" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="TYPE_DIAGNOSE_KODEVERK" access="Guarded" datatype="numeric(1,0)" />
+    <dc:field name="EU_SHORTLIST_1998" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="DIAGNOSE_UNDERLIGGENDE" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="DIAGNOSE_SKADE" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="ARSAK_DIAGNOSER_IA" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="ARSAK_DIAGNOSER_IB" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="ARSAK_DIAGNOSER_IC" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="ARSAK_DIAGNOSER_II" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="ALLE_DIAGNOSER" access="Guarded" datatype="varchar(5)" />
+    <dc:field name="OBDUKSJONSTYPE" access="Guarded" datatype="numeric(1,0)" />
+  </dc:dataset>
+</oai_dc:dc>
