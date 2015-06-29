@@ -1,0 +1,30 @@
+-- Structural creation script --
+-- Format: PostgreSql         --
+
+CREATE TABLE daar_var_test (
+row_id serial PRIMARY KEY,
+IDENT varchar(12),
+KJONN numeric(1,0),
+ALDER_AR numeric(3,0),
+ALDER_DAGER numeric(5,0),
+BOSTEDSKOMMUNE varchar(4),
+DODSTIDSPUNKT timestamp,
+DODSSTED numeric(1,0),
+DODSKOMMUNE varchar(4),
+BOSTEDSLAND varchar(2),
+OPPHOLDSKATEGORI numeric(1,0),
+MELDINGSTYPER_INN varchar(1),
+SPES_OMST_A numeric(1,0),
+SPES_OMST_B numeric(1,0),
+SKADESTED numeric(1,0),
+SKADEAKTIVITET numeric(1,0),
+TYPE_DIAGNOSE_KODEVERK numeric(1,0),
+EU_SHORTLIST_1998 varchar(5),
+DIAGNOSE_UNDERLIGGENDE varchar(5),
+DIAGNOSE_SKADE varchar(5),
+ARSAK_DIAGNOSER_IA varchar(5),
+ARSAK_DIAGNOSER_IB varchar(5),
+ARSAK_DIAGNOSER_IC varchar(5),
+ARSAK_DIAGNOSER_II varchar(5),
+ALLE_DIAGNOSER varchar(5),
+OBDUKSJONSTYPE numeric(1,0));
